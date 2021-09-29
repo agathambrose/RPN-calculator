@@ -19,11 +19,6 @@ form{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
 }
 
-button.clear {
-    background: #FF5722;
-    color: #fff;
-    outline: none;
-}
 
 table {
     background: white;
@@ -33,16 +28,6 @@ table {
     border-radius: 40px;
 }
 
-button.enter {
-    width: 90%;
-    background: #210b04;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    outline: none;
-}
-button.enter:hover{
-	background: #000803;
-    outline: none;
-}
 input[type="text"] {
     width: 350px;
     height: 81px;
@@ -58,6 +43,26 @@ input[type="text"] {
     border-radius: 20px;
     outline: none;
 }
+
+button:focus{
+    outline: none;
+}
+
+button.clear {
+    background: #FF5722;
+    color: #fff;
+}
+
+button.enter {
+    width: 90%;
+    background: #210b04;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button.enter:hover{
+	background: #000803;
+}
+
 button {
     margin-bottom: 20px;
     font-weight: bold;
@@ -69,6 +74,7 @@ button {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     outline: none;
 }
+
 button:hover{
 	background: #210b04;
     outline: none;
@@ -78,7 +84,7 @@ button:hover{
   color: #fff;
 }
 
-/* mobile view */
+/* ________mobile view_______ */
 @media only screen and (min-width: 320px) {
     button{
         width: 50px;
@@ -93,7 +99,7 @@ button:hover{
     }
 }
 
-/* medium screens */
+/* __________medium screen A_________ */
 @media only screen and (min-width : 410px) {
     button{
         width: 80px;
@@ -109,6 +115,7 @@ button:hover{
     }
 }
 
+/* __________medium screen B_________ */
 @media only screen and (min-width : 768px) {
     button{
         width: 85px;
@@ -124,7 +131,7 @@ button:hover{
     }
 }
 
-/* desktops and laptops */
+/* ________desktops and laptops________ */
 @media only screen and (min-width : 992px) {
     button{
         width: 60px;
@@ -140,7 +147,7 @@ button:hover{
     }
 }
 
-/* larger screens or 4k */
+/* ________larger screens________ */
 @media only screen and (min-width : 1200px) {
     button{
         width: 80px;
@@ -156,6 +163,7 @@ button:hover{
     }
 }
 
+/* __________4k Screens________ */
 @media only screen and (min-width : 2000px) {
     button{
         width: 150px;
