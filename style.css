@@ -1,13 +1,12 @@
 
 body {
-    background-color: #ffff;
-    /* background-image: linear-gradient(315deg, #dfa375 0%, #c58e7f 74%); */
+    background-color: black;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 form{
@@ -18,7 +17,9 @@ form{
 button.clear {
     background: #FF5722;
     color: #fff;
+    outline: none;
 }
+
 table {
     background: white;
     border: 6px solid #00000000;
@@ -26,13 +27,16 @@ table {
     box-shadow: 0px 0px 40px #0d5569;
     border-radius: 40px;
 }
+
 button.enter {
     width: 90%;
     background: #210b04;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    outline: none;
 }
 button.enter:hover{
 	background: #000803;
+    outline: none;
 }
 input[type="text"] {
     width: 350px;
@@ -60,9 +64,11 @@ button {
     border-radius: 12px;
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    outline: none;
 }
 button:hover{
 	background: #210b04;
+    outline: none;
 }
 
 .action-btns{
