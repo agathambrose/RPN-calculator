@@ -1,12 +1,13 @@
 
 body {
-    background-color: #dfa375;
-    background-image: linear-gradient(315deg, #dfa375 0%, #c58e7f 74%);
+    background-color: #ffff;
+    /* background-image: linear-gradient(315deg, #dfa375 0%, #c58e7f 74%); */
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 
 form{
@@ -19,7 +20,7 @@ button.clear {
     color: #fff;
 }
 table {
-    background: black;
+    background: white;
     border: 6px solid #00000000;
     text-align: center;
     box-shadow: 0px 0px 40px #0d5569;
