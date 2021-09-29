@@ -2,29 +2,35 @@
 body {
     background-color: #dfa375;
     background-image: linear-gradient(315deg, #dfa375 0%, #c58e7f 74%);
-    /* padding: 50px 0px; */
-    min-height: 80vh;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+form{
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
 button.clear {
     background: #FF5722;
     color: #fff;
 }
 table {
-    /* background: rgb(201, 189, 189); */
     background: black;
-    padding: 7px 5px;
     border: 6px solid #00000000;
     text-align: center;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 27px #0d5569;
-    border-radius: 10px;
-    margin-top: 90px;
+    box-shadow: 0px 0px 40px #0d5569;
+    border-radius: 40px;
 }
-button.eval {
-    width: 80%;
+button.enter {
+    width: 90%;
     background: #210b04;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-button.eval:hover{
+button.enter:hover{
 	background: #000803;
 }
 input[type="text"] {
@@ -40,20 +46,18 @@ input[type="text"] {
     margin-top: 10px;
     color: #dedede;
     border-bottom: 2px solid #cc4014;
+    border-radius: 20px;
 }
 button {
-    padding: 10px 20px;
-    width: 80px;
-    height: 60px;
     margin-bottom: 20px;
-    font-size: 26px;
     font-weight: bold;
     font-family: cursive;
     background: #000803;
     border: none;
     color: #d23200;
-    border-radius: 6px;
+    border-radius: 12px;
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 button:hover{
 	background: #210b04;
@@ -61,4 +65,83 @@ button:hover{
 
 .action-btns{
   color: #fff;
+}
+
+/* mobile view */
+@media only screen and (min-width: 320px) {
+button{
+    width: 50px;
+    height: 40px;
+    font-size: 12px;
+    padding: 5px;
+}
+input[type="text"]{
+    width: 200px;
+    height: 70px;
+    font-size: 1.5rem;
+}
+}
+
+/* medium screens */
+@media only screen and (min-width : 480px) {
+button{
+    width: 60px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 5px;
+}
+input[type="text"]{
+    width: 250px;
+    height: 80px;
+    font-size: 2rem;
+}
+}
+
+/* desktops and laptops */
+@media only screen and (min-width : 992px) {
+    button{
+        width: 60px;
+        height: 50px;
+        font-size: 1rem;
+        padding: 5px;
+    }
+    input[type="text"]{
+        width: 280px;
+        height: 130px;
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+/* larger screens or 4k */
+@media only screen and (min-width : 1200px) {
+    button{
+        width: 80px;
+        height: 70px;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    input[type="text"]{
+        width: 400px;
+        height: 200px;
+        padding: 5px;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width : 2000px) {
+    button{
+        width: 150px;
+        height: 130px;
+        font-size: 3rem;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    input[type="text"]{
+        border-bottom: 5px solid #cc4014;
+        width: 800px;
+        height: 500px;
+        padding: 5px;
+        font-size: 6rem;
+    }
 }
