@@ -1,6 +1,5 @@
 
 body {
-    /* background-color: black; */
     background-color: #2a5470;
     background-repeat: no-repeat;
     display: flex;
@@ -10,6 +9,7 @@ body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    margin: auto;
 }
 
 .back{

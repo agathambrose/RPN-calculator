@@ -8,6 +8,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    margin: auto;
 }
 
 h1{
@@ -25,6 +26,11 @@ a{
     outline: none;
     text-decoration: none; 
 }
+
+/* .form-div{
+    min-height: 90vh;
+    margin: auto;
+} */
 
 button{
     transition: all .5s ease;
