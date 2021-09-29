@@ -73,32 +73,33 @@ button:hover{
 
 /* mobile view */
 @media only screen and (min-width: 320px) {
-button{
-    width: 50px;
-    height: 40px;
-    font-size: 12px;
-    padding: 5px;
-}
-input[type="text"]{
-    width: 200px;
-    height: 70px;
-    font-size: 1.5rem;
-}
+    button{
+        width: 50px;
+        height: 40px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    input[type="text"]{
+        width: 200px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
 }
 
 /* medium screens */
 @media only screen and (min-width : 480px) {
-button{
-    width: 60px;
-    height: 50px;
-    font-size: 1rem;
-    padding: 5px;
-}
-input[type="text"]{
-    width: 250px;
-    height: 80px;
-    font-size: 2rem;
-}
+    button{
+        width: 80px;
+        height: 70px;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    input[type="text"]{
+        width: 350px;
+        height: 90px;
+        font-size: 2.5rem;
+        padding: 20px 5px;
+    }
 }
 
 /* desktops and laptops */
