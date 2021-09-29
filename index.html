@@ -1,114 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RPN Calculator</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RPN Calculator</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+	<body>
+		<div class="form-div">
+			<form name="calculator">
+				<!-- create table for calculator -->
+				<table align="center">
+					<!-- calculator outputs here -->
+					<tr>
+						<td colspan="4">
+							<input
+								type="text"
+								id="result"
+								name="result"
+								placeholder="0"
+								style="text-align: right"
+							/>
+						</td>
+					</tr>
 
-<body>
-  <div class="form-div">
-    <form name="calculator">
-      <!-- create table for calculator -->
-      <table align="center">
-        <!-- calculator outputs here -->
-        <tr>
-          <td colspan="4">
-            <input 
-            type="text" 
-            id="result" 
-            name="result" 
-            placeholder="0" style="text-align: right" />
-          </td>
-        </tr>
+					<!-- calculator inputs here -->
+					<!-- input row 1 -->
+					<tr>
+						<td>
+							<button type="button" value="C" class="clear" onclick="remv()">
+								AC
+							</button>
+						</td>
+						<td colspan="3">
+							<button type="button" id="enter" value="enter" class="enter">
+								<!-- onclick="document.getElementById('result').value=rpnCalc(this.stack.push(result))" -->
+								Enter >
+							</button>
+						</td>
+					</tr>
 
-        <!-- calculator inputs here -->
-        <!-- input row 1 -->
-        <tr>
-          <td>
-            <button type="button" value="C" class="clear" onclick="remv()">
-              AC
-            </button>
-          </td>
-          <td colspan="3">
-            <button type="button" id="enter" value="enter" class="enter">
-              <!-- onclick="document.getElementById('result').value=rpnCalc(this.stack.push(result))" -->
-              Enter >
-            </button>
-          </td>
-        </tr>
+					<!-- input row 2 -->
+					<tr>
+						<td>
+							<button
+								type="button"
+								value="1"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								1
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="2"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								2
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="3"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								3
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="+"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+								class="action-btns"
+							>
+								+
+							</button>
+						</td>
+					</tr>
 
-        <!-- input row 2 -->
-        <tr>
-          <td>
-            <button type="button" value="1" onclick="document.getElementById('result').value=rpnCalc(this.value)">1</button>
-          </td>
-          <td>
-            <button type="button" value="2" onclick="document.getElementById('result').value=rpnCalc(this.value)">2</button>
-          </td>
-          <td>
-            <button type="button" value="3" onclick="document.getElementById('result').value=rpnCalc(this.value)">3</button>
-          </td>
-          <td>
-            <button type="button" value="+" onclick="document.getElementById('result').value=rpnCalc(this.value)" class="action-btns">+</button>
-          </td>
-        </tr>
+					<!-- input row 3 -->
+					<tr>
+						<td>
+							<button
+								type="button"
+								value="4"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								4
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="5"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								5
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="6"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								6
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="-"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+								class="action-btns"
+							>
+								-
+							</button>
+						</td>
+					</tr>
 
-        <!-- input row 3 -->
-        <tr>
-          <td>
-            <button type="button" value="4" onclick="document.getElementById('result').value=rpnCalc(this.value)" >4</button>
-          </td>
-          <td>
-            <button type="button" value="5" onclick="document.getElementById('result').value=rpnCalc(this.value)" >5</button>
-          </td>
-          <td>
-            <button type="button" value="6" onclick="document.getElementById('result').value=rpnCalc(this.value)" >6</button>
-          </td>
-          <td>
-            <button type="button" value="-" onclick="document.getElementById('result').value=rpnCalc(this.value)"  class="action-btns">-</button>
-          </td>
-        </tr>
+					<!-- input row 4 -->
+					<tr>
+						<td>
+							<button
+								type="button"
+								value="7"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								7
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="8"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								8
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="9"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								9
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="/"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+								class="action-btns"
+							>
+								/
+							</button>
+						</td>
+					</tr>
 
-        <!-- input row 4 -->
-        <tr>
-          <td>
-            <button type="button" value="7" onclick="document.getElementById('result').value=rpnCalc(this.value)" >7</button>
-          </td>
-          <td>
-            <button type="button" value="8" onclick="document.getElementById('result').value=rpnCalc(this.value)" >8</button>
-          </td>
-          <td>
-            <button type="button" value="9" onclick="document.getElementById('result').value=rpnCalc(this.value)" >9</button>
-          </td>
-          <td>
-            <button type="button" value="/" onclick="document.getElementById('result').value=rpnCalc(this.value)"  class="action-btns">/</button>
-          </td>
-        </tr>
-
-        <!-- input row 5 -->
-        <tr>
-          <td>
-            <button type="button" value="." onclick="document.getElementById('result').value=rpnCalc(this.value)"  class="action-btns">.</button>
-          </td>
-          <td>
-            <button type="button" value="0" onclick="document.getElementById('result').value=rpnCalc(this.value)" >0</button>
-          </td>
-          <td>
-            <button type="button" value="*" onclick="document.getElementById('result').value=rpnCalc(this.value)" >*</button>
-          </td>
-          <td>
-            <button type="button" value="BACKSPC" onclick="BACKSPC()" class="action-btns">
-              < </button>
-          </td>
-        </tr>
-      </table>
-    </form>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+					<!-- input row 5 -->
+					<tr>
+						<td>
+							<button
+								type="button"
+								value="."
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+								class="action-btns"
+							>
+								.
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="0"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								0
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="*"
+								onclick="document.getElementById('result').value=rpnCalc(this.value)"
+							>
+								*
+							</button>
+						</td>
+						<td>
+							<button
+								type="button"
+								value="BACKSPC"
+								onclick="BACKSPC()"
+								class="action-btns"
+							>
+								<
+							</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>

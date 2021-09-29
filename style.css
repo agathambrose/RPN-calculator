@@ -42,7 +42,7 @@ input[type="text"] {
     background: #000000;
     font-weight: bold;
     margin-bottom: 25px;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     margin-top: 10px;
     color: #dedede;
     border-bottom: 2px solid #cc4014;
@@ -51,7 +51,7 @@ input[type="text"] {
 button {
     margin-bottom: 20px;
     font-weight: bold;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     background: #000803;
     border: none;
     color: #d23200;
