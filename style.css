@@ -1,182 +1,45 @@
 
 body {
-    background-color: black;
+    background-color: #4c4177;
+    background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
 h1{
     color: white;
     text-align: center;
+    font-size: 3rem;
 }
 
-form{
-    border-radius: 40px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+.layout{
+    display: flex;
+    justify-content: space-around;
 }
 
-
-table {
-    background: white;
-    border: 6px solid #00000000;
-    text-align: center;
-    box-shadow: 0px 0px 20px #0d5569;
-    border-radius: 40px;
-}
-
-input[type="text"] {
-    width: 350px;
-    height: 81px;
-    border: 1px solid #000;
-    padding: 10px 20px;
-    font-size: 29px;
-    background: #000000;
-    font-weight: bold;
-    margin-bottom: 25px;
-    margin-top: 10px;
-    color: #dedede;
-    border-bottom: 2px solid #cc4014;
-    border-radius: 20px;
+a{
     outline: none;
+    text-decoration: none; 
 }
 
-button:focus{
+button{
+    transition: all .5s ease;
+    padding: 20px 15px;
+    border-radius: 10px;
     outline: none;
-}
-
-button.clear {
-    background: #FF5722;
-    color: #fff;
-}
-
-button.enter {
-    width: 90%;
-    background: #210b04;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-button.enter:hover{
-	background: #000803;
-}
-
-button {
-    margin-bottom: 20px;
-    font-weight: bold;
-    background: #000803;
-    border: none;
-    color: #d23200;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    outline: none;
+    border: 3px solid #fff;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color : transparent;
+    line-height: 1;
 }
 
 button:hover{
-	background: #210b04;
-    outline: none;
-}
-
-.action-btns{
-  color: #fff;
-}
-
-/* ________mobile view_______ */
-@media only screen and (min-width: 320px) {
-    button{
-        width: 50px;
-        height: 40px;
-        font-size: 12px;
-        padding: 5px;
-    }
-    input[type="text"]{
-        width: 220px;
-        height: 70px;
-        font-size: 1.5rem;
-    }
-}
-
-/* __________medium screen A_________ */
-@media only screen and (min-width : 410px) {
-    button{
-        width: 80px;
-        height: 70px;
-        font-size: 1.5rem;
-        padding: 5px;
-    }
-    input[type="text"]{
-        width: 350px;
-        height: 90px;
-        font-size: 2.5rem;
-        padding: 20px 5px;
-    }
-}
-
-/* __________medium screen B_________ */
-@media only screen and (min-width : 768px) {
-    button{
-        width: 85px;
-        height: 70px;
-        font-size: 1.5rem;
-        padding: 5px;
-    }
-    input[type="text"]{
-        width: 400px;
-        height: 100px;
-        font-size: 2.5rem;
-        padding: 20px 5px;
-    }
-}
-
-/* ________desktops and laptops________ */
-@media only screen and (min-width : 992px) {
-    button{
-        width: 60px;
-        height: 50px;
-        font-size: 1rem;
-        padding: 5px;
-    }
-    input[type="text"]{
-        width: 280px;
-        height: 130px;
-        padding: 10px;
-        font-size: 3rem;
-    }
-}
-
-/* ________larger screens________ */
-@media only screen and (min-width : 1200px) {
-    button{
-        width: 80px;
-        height: 70px;
-        font-size: 2rem;
-        padding: 10px;
-    }
-    input[type="text"]{
-        width: 400px;
-        height: 200px;
-        padding: 5px;
-        font-size: 4rem;
-    }
-}
-
-/* __________4k Screens________ */
-@media only screen and (min-width : 2000px) {
-    button{
-        width: 150px;
-        height: 130px;
-        font-size: 3rem;
-        padding: 20px;
-        border-radius: 40px;
-    }
-    input[type="text"]{
-        border-bottom: 5px solid #cc4014;
-        width: 800px;
-        height: 500px;
-        padding: 5px;
-        font-size: 6rem;
-    }
+    color: #0b3a69;
+    background-color: #fff;
 }

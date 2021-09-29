@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RPN Input Calculator</title>
+		<link rel="stylesheet" href="input-calculator.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="back">
+			<a href="../index.html"> < Back</a>
+		</div>
+		<div>
+			<h1>RPN Input Calculator</h1>
+			<form>
+				<div class="input">
+					<input
+						id="RPNinput"
+						type="input"
+						size="50"
+						onchange="document.getElementById('result').value=rpnCalc(this.value)"
+            onfocus="document.getElementById('result').value=this.value=''"
+						placeholder="Input RPN expression here.."
+					/>
+				</div>
+				<br />
+
+				<div class="input">
+					<input id="result" size="20" readonly placeholder="Result" />
+				</div>
+			</form>
+		</div>
+
+		<script src="input-calculator.js"></script>
+	</body>
+</html>

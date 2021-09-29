@@ -1,0 +1,200 @@
+
+body {
+    /* background-color: black; */
+    background-color: #2a5470;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+h1{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+form{
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+}
+
+table {
+    background: white;
+    border: 6px solid #4c4177;
+    text-align: center;
+    box-shadow: 0px 0px 20px #0d5569;
+    border-radius: 40px;
+}
+
+input[type="text"] {
+    width: 350px;
+    height: 81px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 29px;
+    background: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    color: #dedede;
+    border-bottom: 2px solid #4c4177;
+    border-radius: 20px;
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+button.clear {
+    background: #4c4177;
+    color: #fff;
+}
+
+button.enter {
+    width: 90%;
+    background: #4c4177;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button.enter:hover{
+	background: #000803;
+}
+
+button {
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: #000803;
+    border: none;
+    color: #cbc4e6;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    outline: none;
+}
+
+button:hover{
+	background: #210b04;
+    outline: none;
+}
+
+.action-btns{
+  color: #fff;
+}
+
+/* ______________MEDIA QUERIES__________ */
+
+        /* ________mobile view_______ */
+@media only screen and (min-width: 320px) {
+    button{
+        width: 50px;
+        height: 40px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    input[type="text"]{
+        width: 220px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+}
+
+    /* ________medium screen A_______ */
+@media only screen and (min-width : 410px) {
+    button{
+        width: 80px;
+        height: 70px;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    input[type="text"]{
+        width: 350px;
+        height: 90px;
+        font-size: 2.5rem;
+        padding: 20px 5px;
+    }
+}
+
+/* __________medium screen B_________ */
+@media only screen and (min-width : 768px) {
+    button{
+        width: 85px;
+        height: 70px;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    input[type="text"]{
+        width: 400px;
+        height: 100px;
+        font-size: 2.5rem;
+        padding: 20px 5px;
+    }
+}
+
+/* ________desktops and laptops________ */
+@media only screen and (min-width : 992px) {
+    button{
+        width: 60px;
+        height: 50px;
+        font-size: 1rem;
+        padding: 5px;
+    }
+    input[type="text"]{
+        width: 280px;
+        height: 130px;
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+/* ________larger screens________ */
+@media only screen and (min-width : 1200px) {
+    button{
+        width: 80px;
+        height: 70px;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    input[type="text"]{
+        width: 400px;
+        height: 200px;
+        padding: 5px;
+        font-size: 4rem;
+    }
+}
+
+/* __________4k Screens________ */
+@media only screen and (min-width : 2000px) {
+    button{
+        width: 150px;
+        height: 130px;
+        font-size: 3rem;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    input[type="text"]{
+        border-bottom: 5px solid #cc4014;
+        width: 800px;
+        height: 500px;
+        padding: 5px;
+        font-size: 6rem;
+    }
+}
