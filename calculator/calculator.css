@@ -1,0 +1,274 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9d2;
+  background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  margin: auto;
+}
+
+.back{
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.397);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.back:hover{
+  background: rgba(255, 255, 255, 0.459);
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+div.wrapper{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 50%
+}
+
+div.text-div{
+  display: flex;
+  flex-direction: column;
+  background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  min-width: 30%;
+  padding: 30px 18px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+ul{
+  list-style: inside;
+}
+
+div.form-div{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  min-width: 50%;
+}
+
+div.input-group{
+  position: relative;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input{
+  background: black;
+  color: white;
+  padding: 10px 20px 10px 0px;
+  outline: none;
+  border: none;
+  border-bottom: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 90%;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+ h1{
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: 'Merriweather', serif;
+}
+
+div.eval-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+button{
+  width: 80%;
+  font-family: inherit;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+button.eval{
+  margin-right: 3px;
+  background-color: black;
+  color: white;
+  padding: 18px 10px;
+}
+
+button.eval:hover{
+  transition: .3s all ease-in-out;
+  background-color: white;
+  color: black;
+}
+
+button.clear{
+  margin-left: 3px;
+  background-color: white;
+  color: black;
+  padding: 18px 10px;
+}
+
+button.clear:hover{
+  transition: .5s ease-in all;
+  background-color: rgb(231, 179, 179);
+  color: black;
+}
+
+/* ______________MEDIA QUERIES__________ */
+
+        /* ________mobile view_______ */
+@media only screen and (min-width: 320px) {
+  div.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  div.form-div{
+  margin-top: 12px;
+  min-width: 100%;
+  margin-left: 0px;
+  }
+
+  button{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  button.eval{
+    margin-right: 10px;
+  }
+
+  button.clear{
+    margin-right: 8px;
+  }
+}
+
+/* __________medium screen B_________ */
+@media only screen and (min-width : 740px) {
+  div.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  div.form-div{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+  button{
+  width: 40%;
+  font-family: inherit;
+  padding: 10px 2px;
+  border: 2px solid whitesmoke;
+}
+}
+
+/* ________desktops and laptops________ */
+@media only screen and (min-width : 992px) {
+  div.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+  }
+
+  div.form-div{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  }
+
+  button, input{
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 1300px){
+    div.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+  }
+
+  h1{
+    font-size: 2.8rem;
+  }
+
+  div.form-div{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  font-size: 20px;
+  }
+}
+
+/* __________4k Screens________ */
+@media only screen and (min-width : 2100px) {
+  h1{
+    font-size: 3rem;
+  }
+
+  div.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+  }
+
+  div.form-div{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  font-size: 24px;
+  }
+
+  input, p, ul, h4, button, a, span{
+    font-size: 2rem;
+  }
+}

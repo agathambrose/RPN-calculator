@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RPN Input Calculator</title>
+		<link rel="stylesheet" href="calculator.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="back">
+			<a href="../index.html"> < Back</a>
+		</div>
+		<div class="wrapper">
+			<div class="text-div">
+				<h1>RPN Calculator</h1>
+				<div>
+					<h4>How to use:</h4>
+					<ul>
+						<p>
+							Enter values to be evaluated as well as operators separately in
+							the input box then click enter to evaluate.
+							<br />
+							i.e after each value, press "enter" or click anywhere outside of
+							the box
+						</p>
+						<p>Example:</p>
+						<li>Type 5 and press enter</li>
+						<li>Type 6 and press enter</li>
+						<li>Type + and press enter</li>
+						<li>Then tap on the Evaluate button to get a result of 11</li>
+					</ul>
+				</div>
+			</div>
+			<div class="form-div">
+				<div class="input-area">
+					<div class="input-group">
+						<input
+							id="input"
+							type="text"
+							block
+							placeholder="Input"
+							class="input"
+						/>
+					</div>
+					<div class="input-group">
+						<input
+							id="expression"
+							readonly
+							type="text"
+							placeholder="Expression"
+							class="input"
+						/>
+					</div>
+				</div>
+				<div>
+					<p>Result: <span id="result"></span></p>
+				</div>
+				<div class="eval-div">
+					<button disabled type="submit" id="submit" class="eval">
+						Evaluate
+					</button>
+					<button id="clear" class="clear">Clear</button>
+				</div>
+				<br />
+			</div>
+		</div>
+
+		<script src="calculator.js"></script>
+	</body>
+</html>
