@@ -117,6 +117,7 @@ div.eval-div{
 }
 
 button{
+  outline: none;
   width: 80%;
   font-family: inherit;
   border: 2px solid whitesmoke;
