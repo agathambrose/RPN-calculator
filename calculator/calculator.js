@@ -1,4 +1,5 @@
-const input = document.getElementById("input");
+//Initialize all required variables
+const input = document.getElementById( "input" );
 const output = document.getElementById("expression");
 const clearBtn = document.getElementById("clear");
 const result = document.getElementById("result");
@@ -8,7 +9,7 @@ let expressionStack = [];
 let resultStack = [];
 const operators = ["+", "-", "*", "/"];
 
-
+//set an event listener to manage the onchange events
 input.addEventListener("change", (e) => {
   inputVal = e.target.value.trim();
   if (inputVal) {
@@ -27,16 +28,15 @@ input.addEventListener("change", (e) => {
   input.value = "";
 });
 
-const clear = () => {
+//On result shown, clear input and output areas
+const clearExpression = () => {
   input.value = "";
+  input.focus()
   output.value = "";
   expressionStack = [];
-  resultStack = [];
-  result.innerText = "";
-};
+}
 
-clearBtn.onclick = clear;
-
+//Solve to give an actual result or throw an error in the case of an exception or invalid characters then clear input and output
 const evaluate = (e) => {
   e.preventDefault();
   if (
@@ -51,6 +51,20 @@ const evaluate = (e) => {
   else {
     result.innerText = resultStack[0];
   }
+
+  clearExpression()
 };
 
+//clear entire action
+const clear = () => {
+  input.value = "";
+  input.focus()
+  output.value = "";
+  expressionStack = [];
+  resultStack = [];
+  result.innerText = "";
+};
+clearBtn.onclick = clear;
+
+//submit action
 submit.onclick = evaluate;
